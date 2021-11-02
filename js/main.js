@@ -42,8 +42,28 @@ setBtn.addEventListener('click', () => {
     const grid = document.createElement ('div');
     grid.classList.add('grid');
 
+   
+    // generazione caselle
+    for (let i = 0; i <= cellsNumber; i++) {
+        // gen square
+        const square = genSquare(cellsSide);
+        grid.append(square);
+    }
+
     // inserimento nel HTML
     wrapGrid.append(grid);
-
 })
 
+
+
+
+// funzioni
+
+function genSquare (cells) {
+    const node = document.createElement('div');
+    node.classList.add('square');
+    node.style.width = `calc(100% / ${cells})`;
+    node.style.height = `calc(100% / ${cells})`;
+
+    return node;
+}
