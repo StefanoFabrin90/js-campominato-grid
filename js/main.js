@@ -6,6 +6,7 @@
 
 const setBtn = document.getElementById('set');
 const wrapGrid = document.querySelector('.wrap-grid');
+const dimensionLevel = document.getElementById('dimensioni');
 
 // set griglia
 setBtn.addEventListener('click', () => {
@@ -14,8 +15,35 @@ setBtn.addEventListener('click', () => {
     // reset del title
     wrapGrid.innerHTML = '';
 
+    // settare la griglia
+    const griDimension = dimensionLevel.value;
+    console.log(griDimension);
+    let cellsNumber;
+    let cellsSide;
+    
+    switch (griDimension) {
+        case '1':
+            cellsNumber = 49;
+            cellsSide = 7;
+            break;
+        case '2':
+            cellsNumber = 81;
+            cellsSide = 9;
+            break;
+        case '3':
+            cellsNumber = 100;
+            cellsSide = 10;
+            break;
+    }
+    console.log(cellsNumber);
+    console.log(cellsSide);
 
+    // generazione grid
+    const grid = document.createElement ('div');
+    grid.classList.add('grid');
 
+    // inserimento nel HTML
+    wrapGrid.append(grid);
 
 })
 
