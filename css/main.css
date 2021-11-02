@@ -1,8 +1,4 @@
 
-.toolbar {
-    margin-bottom: 5rem;
-}
-
 .toolbar h1 {
     font-size: 2rem;
     font-weight: bold;
@@ -10,9 +6,11 @@
     margin-left: 10px;
 }
 
-body {
-    background-color: aquamarine;
+main {
+    height: 800px;
+    background-color: lightblue;
 }
+
 .wrap-grid h3 {
     text-align: center;
     font-weight: bold;
@@ -40,3 +38,4 @@ body {
 .square.clicked {
     background-color: dodgerblue;
 }
+
