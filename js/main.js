@@ -44,10 +44,17 @@ setBtn.addEventListener('click', () => {
 
    
     // generazione caselle
-    for (let i = 0; i <= cellsNumber; i++) {
+    for (let i = 1; i <= cellsNumber; i++) {
         // gen square
         const square = genSquare(cellsSide);
+        square.innerHTML += `${i}`;
         grid.append(square);
+
+        // cliccabile
+        square.addEventListener('click', function(){
+            console.log(square);
+            square.classList.add('clicked');
+        });
     }
 
     // inserimento nel HTML

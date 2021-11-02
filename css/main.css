@@ -1,6 +1,6 @@
 
 .toolbar {
-    margin-bottom: 2rem;
+    margin-bottom: 5rem;
 }
 
 .toolbar h1 {
@@ -35,4 +35,8 @@ body {
     align-items: center;
     border: 1px solid black;
     cursor: pointer;
+}
+
+.square.clicked {
+    background-color: dodgerblue;
 }
