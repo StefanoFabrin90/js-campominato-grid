@@ -23,16 +23,16 @@ setBtn.addEventListener('click', () => {
     
     switch (griDimension) {
         case '1':
-            cellsNumber = 49;
-            cellsSide = 7;
+            cellsNumber = 100;
+            cellsSide = 10;
             break;
         case '2':
             cellsNumber = 81;
             cellsSide = 9;
             break;
         case '3':
-            cellsNumber = 100;
-            cellsSide = 10;
+            cellsNumber = 49;
+            cellsSide = 7;
             break;
     }
     console.log(cellsNumber);
