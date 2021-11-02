@@ -1,3 +1,38 @@
-h1 {
-    color: red;
+
+.toolbar {
+    margin-bottom: 2rem;
+}
+
+.toolbar h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+body {
+    background-color: aquamarine;
+}
+.wrap-grid h3 {
+    text-align: center;
+    font-weight: bold;
+}
+
+
+/* griglia */
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+    height: 500px;
+    margin: 60px auto;
+    border: 2px solid black;
+}
+
+.square {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    cursor: pointer;
 }

@@ -11,8 +11,33 @@
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-    
-    <h1>test</h1>
+    <!-- header -->
+    <header class="toolbar">
+        <nav class="navbar navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img src="./img/logo.png" alt="" width="40" height="40" class="d-inline-block align-text-center">
+                <h1 class="d-inline">Campo Minato: la Griglia</h1>
+              </a>
+              <form class="d-flex">
+                <label for="dimensioni" class="mx-3 size">
+                    Difficoltá:
+                </label>
+                <select id="dimensioni" class="mx-3">
+                    <option value="1">Facile</option>
+                    <option value="2">Intermedia</option>
+                    <option value="3">Difficile</option>
+                </select>
+                <button type="button" id="set" class="btn btn-primary">Play</button>
+              </form>
+            </div>
+        </nav>
+    </header>
+
+    <!-- main -->
+    <main class="wrap-grid">
+        <h3>Seleziona un livello del gioco</h3>
+    </main>
 
 
 
